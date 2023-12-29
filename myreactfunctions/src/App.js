@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Sum from './Sum';
 import ParentIncome from './ParentIncome';
 import Sample from './Sample';
+import Course from './Course';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
 
       {/* <Sum/> */}
       {/* <ParentIncome/> */}
-      <Sample/>
+      {/* <Sample/> */}
+      <Course/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

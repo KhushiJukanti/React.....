@@ -10,7 +10,8 @@ import Home from './components/Home';
 import NavBar from './components/Navbar';
 import AllHooks from './components/AllHooks/AllHooks';
 import UserCrud from './components/AllHooks/UserCrud';
-import ToDo from './components/AllHooks/Todo';
+import ToDo from './components/Todo';
+
 
 
 function App() {

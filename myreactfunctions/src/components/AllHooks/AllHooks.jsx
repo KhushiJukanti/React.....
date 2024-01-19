@@ -1,3 +1,4 @@
+import UseContextHookdemo from "./UseContext"
 import UseRecucerHookdemo from "./UseReducerHookDemo"
 import UseRefHookDemo from "./UseRefHookDemo"
 
@@ -10,6 +11,9 @@ function AllHooks(){
             <UseRecucerHookdemo/>
             <h3 style={{color:'Green'}}>4. -------------------------------useRef hook</h3>
             <UseRefHookDemo/>
+
+            <h3 style={{color:'red'}}>5. -------------------------------useContext hook</h3>
+            <UseContextHookdemo/>
         </div>
         
         

@@ -11,6 +11,7 @@ import NavBar from './components/Navbar';
 import AllHooks from './components/AllHooks/AllHooks';
 import UserCrud from './components/AllHooks/UserCrud';
 import ToDo from './components/Todo';
+import UserCreateForm from './components/AllHooks/UserCreateForm';
 
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/allhook" element={<AllHooks />}></Route>
           <Route path="/userscrud" element={<UserCrud/>}></Route>
           <Route path="/Todo's App" element={<ToDo/>}></Route>
+          <Route path="/createuser" element={<UserCreateForm/>}></Route>
           {/* <Route path="/" element={<Home />}></Route> */}
         </Routes>
       </BrowserRouter>

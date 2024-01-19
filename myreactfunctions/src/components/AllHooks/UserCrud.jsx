@@ -4,17 +4,26 @@ import { usersData } from "./UsersData"
 
 function UserCrud() {
 
-    const [users, setUsers] = useState(usersData)
-    const[filteredUsers,setFilteredUsers] = useState(usersData)
+    const [users, setUsers] = useState([])
+    const[filteredUsers,setFilteredUsers] = useState([])
     const [searchkey, setSearchKey] = useState("")
 
     const onhandleSearch = (e) =>{
         setSearchKey(e.target.value)
     }
+    const getUsersFromLocal = async () =>{
+        let usersData = await localStorage.getItem("users") 
+        setFilteredUsers(JSON.parse(usersData))
+        setUsers(JSON.parse(usersData))
+    }
+
+    useEffect(()=>{
+       getUsersFromLocal()
+    },[])
     const searchUsers = ()=>{
 
         if(searchkey===""){
-            setFilteredUsers(usersData)
+            setFilteredUsers([])
         }else{
             let result = users.filter((item)=>{
                 return item.name.toLowerCase().includes(searchkey.toLowerCase()) || item.email.toLowerCase().includes(searchkey.toLowerCase())

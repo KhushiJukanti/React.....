@@ -24,6 +24,10 @@ function NavBar() {
                         <li class="nav-item">
                             <Link class="nav-link active" aria-current="page" to="Todo's App">Todo</Link>
                         </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link active" aria-current="page" to="createuser">Create User</Link>
+                        </li>
                         
 
                     </ul>

@@ -6,11 +6,23 @@ import App from './App';
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
 
+// redux integration code here
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './Reducers/RootReducer';
+
+const store = createStore(rootReducer)
+
+// end of react redux integration
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
+    
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

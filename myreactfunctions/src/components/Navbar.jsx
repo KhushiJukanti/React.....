@@ -28,6 +28,14 @@ function NavBar() {
                         <li class="nav-item">
                             <Link class="nav-link active" aria-current="page" to="createuser">Create User</Link>
                         </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link active" aria-current="page" to="contactlist">Contact List</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link active" aria-current="page" to="counterusingreducer">CounterUsing Reducer</Link>
+                        </li>
                         
 
                     </ul>

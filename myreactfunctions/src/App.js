@@ -14,6 +14,7 @@ import ToDo from './components/Todo';
 import UserCreateForm from './components/AllHooks/UserCreateForm';
 import Contactlist from './components/Contacts App/contact_List';
 import CounterUsingRedux from './components/CounterUsingRedux';
+import ContactusingReducer from './components/ContactsUsingReducer';
 
 
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/createuser" element={<UserCreateForm/>}></Route>
           <Route path="/contactlist" element={<Contactlist/>}></Route>
           <Route path="/counterusingreducer" element={<CounterUsingRedux/>}></Route>
+          <Route path="/contactsusingreducer" element={<ContactusingReducer/>}></Route>
           {/* <Route path="/" element={<Home />}></Route> */}
         </Routes>
       </BrowserRouter>

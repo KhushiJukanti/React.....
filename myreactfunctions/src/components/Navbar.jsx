@@ -40,6 +40,15 @@ function NavBar() {
                         <li class="nav-item">
                             <Link class="nav-link active" aria-current="page" to="contactsusingreducer">ContactsUsing Reducer</Link>
                         </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link active" aria-current="page" to="allprops">All Props</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link active" aria-current="page" to="usersreactnode">UsersReactNode</Link>
+                        </li>
+
                         
 
                     </ul>

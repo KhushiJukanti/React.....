@@ -16,6 +16,10 @@ import Contactlist from './components/Contacts App/contact_List';
 import CounterUsingRedux from './components/CounterUsingRedux';
 import ContactusingReducer from './components/ContactsUsingReducer';
 
+import All_props from './components/props/All_props';
+import UserRecatNode from './components/UsersReactNode';
+import UserReactNode from './components/UsersReactNode';
+
 
 
 function App() {
@@ -52,6 +56,9 @@ function App() {
           <Route path="/contactlist" element={<Contactlist/>}></Route>
           <Route path="/counterusingreducer" element={<CounterUsingRedux/>}></Route>
           <Route path="/contactsusingreducer" element={<ContactusingReducer/>}></Route>
+          <Route path="/allprops" element={<All_props/>}></Route>
+          <Route path="/usersreactnode" element={<UserReactNode/>}></Route>
+          
           {/* <Route path="/" element={<Home />}></Route> */}
         </Routes>
       </BrowserRouter>

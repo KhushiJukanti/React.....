@@ -19,12 +19,14 @@ import ContactusingReducer from './components/ContactsUsingReducer';
 import All_props from './components/props/All_props';
 import UserRecatNode from './components/UsersReactNode';
 import UserReactNode from './components/UsersReactNode';
+import CarCatalog from './components/Car-Rental-Service';
 
 
 
 function App() {
   return (
     <div className="App">
+      <CarCatalog/>
 
       {/* <Sum/> */}
       {/* <ParentIncome/> */}
@@ -45,7 +47,7 @@ function App() {
         </a>
       </header> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <NavBar/>
         <Routes>
           <Route path="/home" element={<Home/>}></Route>
@@ -59,9 +61,9 @@ function App() {
           <Route path="/allprops" element={<All_props/>}></Route>
           <Route path="/usersreactnode" element={<UserReactNode/>}></Route>
           
-          {/* <Route path="/" element={<Home />}></Route> */}
+          <Route path="/" element={<Home />}></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

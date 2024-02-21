@@ -26,7 +26,7 @@ import CarCatalog from './components/Car-Rental-Service';
 function App() {
   return (
     <div className="App">
-      <CarCatalog/>
+      {/* <CarCatalog/> */}
 
       {/* <Sum/> */}
       {/* <ParentIncome/> */}
@@ -47,7 +47,7 @@ function App() {
         </a>
       </header> */}
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <NavBar/>
         <Routes>
           <Route path="/home" element={<Home/>}></Route>
@@ -63,7 +63,7 @@ function App() {
           
           <Route path="/" element={<Home />}></Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }

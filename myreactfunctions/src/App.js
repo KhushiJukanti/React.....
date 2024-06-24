@@ -20,12 +20,14 @@ import All_props from './components/props/All_props';
 import UserRecatNode from './components/UsersReactNode';
 import UserReactNode from './components/UsersReactNode';
 import CarCatalog from './components/Car-Rental-Service';
+import Counter from './components/counter'
 
 
 
 function App() {
   return (
     <div className="App">
+      {/* <Counter /> */}
       {/* <CarCatalog/> */}
 
       {/* <Sum/> */}
@@ -48,19 +50,19 @@ function App() {
       </header> */}
 
       <BrowserRouter>
-        <NavBar/>
+        <NavBar />
         <Routes>
-          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route path="/allhook" element={<AllHooks />}></Route>
-          <Route path="/userscrud" element={<UserCrud/>}></Route>
-          <Route path="/Todo's App" element={<ToDo/>}></Route>
-          <Route path="/createuser" element={<UserCreateForm/>}></Route>
-          <Route path="/contactlist" element={<Contactlist/>}></Route>
-          <Route path="/counterusingreducer" element={<CounterUsingRedux/>}></Route>
-          <Route path="/contactsusingreducer" element={<ContactusingReducer/>}></Route>
-          <Route path="/allprops" element={<All_props/>}></Route>
-          <Route path="/usersreactnode" element={<UserReactNode/>}></Route>
-          
+          <Route path="/userscrud" element={<UserCrud />}></Route>
+          <Route path="/Todo's App" element={<ToDo />}></Route>
+          <Route path="/createuser" element={<UserCreateForm />}></Route>
+          <Route path="/contactlist" element={<Contactlist />}></Route>
+          <Route path="/counterusingreducer" element={<CounterUsingRedux />}></Route>
+          <Route path="/contactsusingreducer" element={<ContactusingReducer />}></Route>
+          <Route path="/allprops" element={<All_props />}></Route>
+          <Route path="/usersreactnode" element={<UserReactNode />}></Route>
+
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
